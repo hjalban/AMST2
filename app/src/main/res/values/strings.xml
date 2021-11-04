@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AMST2</string>
+    <string name="button_normal" />
 </resources>
