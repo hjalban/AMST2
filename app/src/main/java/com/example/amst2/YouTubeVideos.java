@@ -1,13 +1,20 @@
 package com.example.amst2;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+public class YouTubeVideos {
+    String videoUrl;
 
-public class YouTubeVideos extends AppCompatActivity {
+    public YouTubeVideos() {
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_you_tube_videos);
+    public YouTubeVideos(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
     }
 }

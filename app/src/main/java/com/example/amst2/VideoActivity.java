@@ -10,13 +10,21 @@ import java.util.Vector;
 
 public class VideoActivity extends AppCompatActivity {
     RecyclerView recyclerView;
+<<<<<<< HEAD
     Vector<YouTubeVideos> youtubeVideos = new Vector<YouTubeVideos>();
+=======
+    Vector<YouTubeVideos> youtubeVideos = new Vector<>();
+>>>>>>> ab273cf (Nuevos cambios en las dependencias)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
+<<<<<<< HEAD
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+=======
+        recyclerView = findViewById(R.id.recyclerView);
+>>>>>>> ab273cf (Nuevos cambios en las dependencias)
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AMST2">
         <activity
+            android:name=".VideoAdapter"
+            android:exported="false" />
+        <activity
             android:name=".MapsActivity"
             android:exported="false" />
         <activity
