@@ -16,32 +16,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnMapa = (Button) findViewById(R.id.btnMapa);
-        btnVideo = (Button) findViewById(R.id.btnVideo);
-        btnCalen= (Button) findViewById(R.id.btnCalen);
+        btnMapa = findViewById(R.id.btnMapa);
+        btnVideo = findViewById(R.id.btnVideo);
+        btnCalen=  findViewById(R.id.btnCalen);
 
-        btnMapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
-                startActivity(intent);
-            }
+        btnMapa.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
+            startActivity(intent);
         });
 
-        btnVideo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),VideoActivity.class);
-                startActivity(intent);
-            }
+        btnVideo.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),VideoActivity.class);
+            startActivity(intent);
         });
 
-        btnCalen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),CalendarActivity.class);
-                startActivity(intent);
-            }
+        btnCalen.setOnClickListener(view -> {
+            Intent intent= new Intent(getApplicationContext(),CalendarActivity.class);
+            startActivity(intent);
         });
 
     }
